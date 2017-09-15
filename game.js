@@ -690,10 +690,10 @@ Asteroid = function () {
   this.collidesWith = ["ship", "bullet", "bigalien", "alienbullet"];
 
   this.breakIntoFragments = function () {
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 2; i++) {
       var roid = $.extend(true, {}, this);
-      roid.vel.x = Math.random() * 6 - 3;
-      roid.vel.y = Math.random() * 6 - 3;
+      roid.vel.x = Math.random() * 4 - 3;
+      roid.vel.y = Math.random() * 4 - 3;
       if (Math.random() > 0.5) {
         roid.points.reverse();
       }
